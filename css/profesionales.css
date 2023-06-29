@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face { 
+    font-family: "Geologica"; 
+    src: url("../fonts/Geologica-Medium.ttf"); 
+} 
+p { 
+    font-family: "Geologica"; 
+}
+span{
+    font-family: "Geologica"; 
+}
+body {
+    background-color: #212D4B;
+}
+/* header */
+nav{
+    padding: 0 50px;
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarone{
+    background-color: gray;
+    color: white;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.right div div{
+    margin-left: 40px;
+}
+.left{
+    margin-left: 40px;
+}
+
+.email,
+.call{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+span{
+    margin-left: 5px;
+}
+
+.email:hover,
+.call:hover{
+    color: black;
+}
+
+.navbarsecond{
+    background-color: #212D4B;
+    height: 110px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 60px;
+    font-size: 120%;
+    font-family:"Geologica";
+}
+
+ul li:hover{
+    transform: scale(1.1);
+}
+
+ul li a:hover{
+    color: #BF996F;
+}
+
+.active{
+    color: #BF996F;
+}
+
+/* main */
+.titulo-profesionales{
+    background-color: #BF996F;
+    color: white;
+    height: 75px;
+    font-size: 130%;
+    font-family:"Geologica";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profesionales{
+    background-color: white;
+    min-height: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#profesionales p{
+    color: #212D4B;
+    font-size: 150%;
+    font-weight: 800;
+    padding-top: 20px;
+}
+
+#profesionales h3{
+    color: #BF996F;
+    font-size: 125%;   
+    font-family: "Geologica"; 
+}
+
+.personas img{
+    filter: drop-shadow(10px 10px 10px rgb(124, 122, 122));
+}
+
+.frase {
+    background-color: #BF996F;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Geologica"; 
+}
+
+.frase p{
+    font-size: 160%;
+    color: white;
+}
+
+/* footer */
+/* .horario {
+    color: white;
+    text-align: right;
+}
+footer h2{
+    color: white;
+} */
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    justify-content: space-around;
+    padding: 50px 0 30px;
+
+}
+
+.footer-row h3{
+    font-family:"Geologica";
+    color: #BF996F;;
+}
+
+#footer{
+    color: white;
+}
+
+.footer-row p{
+    align-self: center;
+}
+
+.contacto-footer {
+    align-items: center;
+}
+
+.contacto-footer .call{
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.horario-box{
+    display: flex;
+}
+
+.horas p{
+    padding-left: 25px;
+}
+
+.horario-encabezado,
+.dias .horas{
+    flex-direction: column;
+}
+
+
+
+

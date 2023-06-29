@@ -1,0 +1,452 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face { 
+    font-family: "Geologica"; 
+    src: url("../fonts/Geologica-Medium.ttf"); 
+} 
+p { 
+    font-family: "Geologica"; 
+}
+span{
+    font-family: "Geologica"; 
+}
+body {
+    background-color: #212D4B;
+}
+/* header */
+/* .contactos{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 5px;
+}
+.redes {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-left: 20px;
+    padding-right: 20px;
+} */
+
+header{
+    grid-area: header;
+}
+
+nav{
+    padding: 0 50px;
+    width: 100%;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbarone{
+    background-color: gray;
+    color: white;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.right div div{
+    margin-left: 40px;
+}
+.left{
+    margin-left: 40px;
+}
+
+.email,
+.call{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+
+span{
+    margin-left: 5px;
+}
+
+.email:hover,
+.call:hover{
+    color: black;
+}
+
+.navbarsecond{
+    background-color: #212D4B;
+    height: 110px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+li{
+    list-style: none;
+}
+
+/* ul{
+    width: 100%;
+    list-style-type: none;
+    background-color: white;
+    padding: 40px 20px 40px;
+    font-size: 120%;
+    font-family:"Geologica";
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+} */
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 60px;
+    font-size: 120%;
+    font-family:"Geologica";
+}
+
+/* header nav ul li{
+    padding: 0 20px 0 20px;
+} */
+
+ul li:hover{
+    transform: scale(1.1);
+}
+
+ul li a:hover{
+    color: #BF996F;
+}
+
+.active{
+    color: #BF996F;
+}
+
+/* main */
+main{
+    grid-area: main;
+}
+.encabezado {
+    height: 50vh;
+    width: 100%;
+    background-color: aliceblue;
+    background-image: url(../img/background\ inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-size: 300%;
+    color: white;
+    font-family:"Geologica";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.valores{
+    background-color: #ffffff;
+    width: 100%;
+    height: 250px;
+    font-size: 200%;
+    font-family:"Geologica";
+    color: #BF996F;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.losvalores{
+    display: grid;
+    grid-template-rows: 170px;
+    grid-template-columns: repeat(5, 250px);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 20px;
+}
+
+
+.losvalores p{
+    font-size: 85%;
+}
+
+#quehacemos{
+    background-color: #e0dfde;
+    font-family:"Geologica";
+    height: 350px;
+    width: 100%;
+    align-items: center ;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 100px 550px;
+    grid-template-rows: 100px ;
+    align-content: center;
+    column-gap: 350px;
+}
+
+.firmando img{
+    height: 250px;
+}
+
+.legalia p{
+    font-size: 110%;
+}
+
+
+
+/* footer */
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    justify-content: space-around;
+    padding: 50px 0 30px;
+
+}
+
+.footer-row h3{
+    font-family:"Geologica";
+    color: #BF996F;;
+}
+
+#footer{
+    color: white;
+    grid-area: footer;
+}
+
+.footer-row p{
+    align-self: center;
+}
+
+.contacto-footer {
+    align-items: center;
+}
+
+.contacto-footer .call{
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.horario-box{
+    display: flex;
+}
+
+.horas p{
+    padding-left: 25px;
+}
+
+.horario-encabezado,
+.dias .horas{
+    flex-direction: column;
+}
+
+/* MEDIA QUERIES */
+
+/* MOVIL */
+@media (max-width: 576px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+
+    /* Header */
+    .navbarone{
+        width: 100%;
+        height: 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbarone .right{
+        flex-direction: column;
+    }
+    
+    .navbarsecond{
+        height: 300px;
+        flex-direction: column;
+    }
+    .navbarsecond .flex{
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+
+    /* Main */
+    .encabezado{
+        height: 25vh;
+        width: 100%;
+        background-color: aliceblue;
+        background-image: url(../img/background\ inicio.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        font-size: 100%;
+        color: white;
+        font-family:"Geologica";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .valores{
+        background-color: #ffffff;
+        width: 100%;
+        height: 1000px;
+        font-size: 200%;
+        font-family:"Geologica";
+        color: #BF996F;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .losvalores{
+        display: grid;
+        grid-template-rows: repeat(5, 170px);
+        grid-template-columns: 250px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        row-gap: 20px;
+    }
+
+    #quehacemos{
+        background-color: #e0dfde;
+        font-family:"Geologica";
+        height: 700px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: 200px 250px;
+        align-content: center;
+        justify-content: center;
+        row-gap: 50px;
+    }
+    
+    .firmando img{
+        height: 250px;
+    }
+    
+    .legalia p{
+        font-size: 100%;
+    }
+    
+    /* Footer */
+    #footer{
+        flex-wrap: nowrap;
+    }
+}
+
+/* TABLET */
+@media (max-width: 991px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+    }
+
+    /* Header */
+    .navbarone{
+        width: 100%;
+        height: 100px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbarone .right{
+        flex-direction: column;
+    }
+    
+    .navbarsecond{
+        height: 300px;
+        flex-direction: column;
+    }
+    .navbarsecond .flex{
+        flex-direction: column;
+        padding-bottom: 25px;
+    }
+
+    /* Main */
+    .encabezado{
+        height: 25vh;
+        width: 100%;
+        background-color: aliceblue;
+        background-image: url(../img/background\ inicio.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        font-size: 100%;
+        color: white;
+        font-family:"Geologica";
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .valores{
+        background-color: #ffffff;
+        width: 100%;
+        height: 1000px;
+        font-size: 200%;
+        font-family:"Geologica";
+        color: #BF996F;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .losvalores{
+        display: grid;
+        grid-template-rows: repeat(5, 170px);
+        grid-template-columns: 250px;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        row-gap: 20px;
+    }
+
+    #quehacemos{
+        background-color: #e0dfde;
+        font-family:"Geologica";
+        height: 700px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: 200px 250px;
+        align-content: center;
+        justify-content: center;
+        row-gap: 50px;
+    }
+    
+    .firmando img{
+        height: 250px;
+    }
+    
+    .legalia p{
+        font-size: 100%;
+    }
+    
+    /* Footer */
+    #footer{
+        flex-wrap: nowrap;
+    }
+}
+
+
+
