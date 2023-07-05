@@ -7,15 +7,17 @@
     <title>Legalia</title>
     <link rel="shortcut icon" href="./img/Law Firm Logo - Icono.png">
     <!-- Bootstrap -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- CDN para menu responsive -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <!-- estilos -->
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
     <!--Header-->
     <header>
-            <nav class="navbarone flex">
+        <nav class="navbarone flex">
                 <div class="left flex">
                     <img src="./img/FB ICONO BLANCO.png" alt="Icono FB">
                     <img src="./img/IG ICONO BLANCO.png" alt="Icono IG">
@@ -31,13 +33,19 @@
                         <span>849-225-9687</span>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <nav class="navbarsecond flex">
+        </nav>
+    </header>
+    <nav class="navbarsecond flex">
         <div class="logo"> 
             <img src="./img/logo sin fondo.png" alt="Logo sin fondo">
         </div>
-        <ul class="flex">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="menu flex">
             <li><a class="active" href="./index.html">Inicio</a></li>
             <li><a href="./pages/historia.html">Historia</a></li>
             <li><a href="./pages/profesionales.html">Profesionales</a></li>
@@ -50,6 +58,9 @@
         <section class="encabezado">
             <div>
                 <h2>Tu bufete de abogados de confianza</h2>
+            </div>
+            <div>
+                <a class="btn btn-primary" href="./pages/contacto.html" role="button">Hable con nosotros</a>
             </div>
         </section>
         <section class="valores">
@@ -84,6 +95,15 @@
                 <br>
                 <p>En Legalia, nos esforzamos por brindar a nuestros clientes la mejor representación legal posible. Nos comprometemos a escucharlo atentamente, comprender sus necesidades y objetivos, y trabajar arduamente para proteger sus derechos e intereses legales. Nuestro enfoque personalizado, combinado con nuestra experiencia y conocimientos legales, nos distingue como un bufete de abogados confiable y eficiente. </p>
             </div>
+            <div class="card">
+                <img src="./img/trofeo.jpg" class="card-img-top" alt="Dato Curioso">
+                <div class="card-body">
+                    <h5 class="card-title">Dato Curioso</h5>
+                    <p class="card-text">
+                    ¿Sabías que Legalia ha ganado el premio "Bufete de Abogados del Año" durante tres años consecutivos?</p>
+                    <a href="./pages/historia.html" class="btn btn-primary">Conocer más</a>
+                </div>
+            </div>
         </section>
     </main>
     <!--Footer-->
@@ -94,10 +114,6 @@
             </div>
             <div class="contacto-footer">
                 <h3>Contactos</h3>
-                <!-- <img src="./img/EMAIL ICONO BLANCO.png" alt="Email">
-                <span>abogados@legalia.com</span>
-                <img src="./img/TEL ICONO BLANCO.png" alt="Telefono">
-                <span>849-225-9687</span> -->
                 <div class="email">
                     <img src="./img/EMAIL ICONO BLANCO.png" alt="Email">
                     <span>abogados@legalia.com</span>
@@ -133,30 +149,9 @@
                             <p>Cerrados</p>
                         </div>
                     </div>
-                <!-- <p> Lunes </p>
-                <p> 8:00am > 5:00pm</p>
-                <br>
-                <p> Martes</p>
-                <p> 8:00am > 5:00pm</p>
-                <br>
-                <p> Miércoles</p>
-                <p> 8:00am > 5:00pm</p>
-                <br>
-                <p> Jueves</p>
-                <p> 8:00am > 5:00pm</p>
-                <br>
-                <p> Viernes</p>
-                <p> 8:00am > 5:00pm</p>
-                <br>
-                <p> Sábado</p>
-                <p> Cerrados</p>
-                <br>
-                <p> Domingo</p>
-                <p> Cerrados</p>
-                <br> -->
             </div>
             <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15137.380690042053!2d-69.90240225000001!3d18.46801775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf882b1b0872eb%3A0xd2f284bffda738bb!2sGazcue%2C%20Santo%20Domingo!5e0!3m2!1ses!2sdo!4v1685892585441!5m2!1ses!2sdo" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15137.380690042053!2d-69.90240225000001!3d18.46801775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf882b1b0872eb%3A0xd2f284bffda738bb!2sGazcue%2C%20Santo%20Domingo!5e0!3m2!1ses!2sdo!4v1685892585441!5m2!1ses!2sdo" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </Footer>

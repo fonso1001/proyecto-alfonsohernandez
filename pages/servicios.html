@@ -6,33 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legalia</title>
     <link rel="shortcut icon" href="../img/Law Firm Logo - Icono.png">
-    <link rel="stylesheet" href="../css/servicios.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <!-- <div class="contactos">
-            <div class="redes">
-                <img src="../img/FB ICONO BLANCO.png" alt="Icono FB">
-                <img src="../img/IG ICONO BLANCO.png" alt="Icono IG">
-                <img src="../img/TW ICONO BLANCO.png" alt="Icono Twitter">
-            </div>
-            <div class="redes">
-                <img src="../img/TEL ICONO BLANCO.png" alt="Telefono">
-                <p>849-225-9687</p>
-                <img src="../img/EMAIL ICONO BLANCO.png" alt="Email">
-                <p>abogados@legalia.com</p>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./historia.html">Historia</a></li>
-                <li><a href="./profesionales.html">Profesionales</a></li>
-                <li><a href="./servicios.html">Servicios</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav> -->
         <nav class="navbarone flex">
             <div class="left flex">
                 <img src="../img/FB ICONO BLANCO.png" alt="Icono FB">
@@ -55,7 +33,13 @@
         <div class="logo"> 
             <img src="../img/logo sin fondo.png" alt="Logo sin fondo">
         </div>
-        <ul class="flex">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="menu flex">
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="../pages/historia.html">Historia</a></li>
             <li><a href="../pages/profesionales.html">Profesionales</a></li>
@@ -65,35 +49,37 @@
     </nav>
     <!--Main -->
     <main>
-        <h2>Áreas de Práctica</h2>
+        <div class="titulo-servicios">
+            <h2>Áreas de Práctica</h2>
+        </div>
         <section id="practicas">
             <div class="servicio">
                 <img src="../img/derecho civil.jpg" alt="Derecho Civil">
                 <h3>Derecho Civil</h3>
                 <br>
                 <p>Nuestros abogados especializados en derecho civil pueden ayudarlo en una variedad de asuntos legales, como divorcios, herencias, reclamaciones de daños y perjuicios, y contratos civiles. </p>
-                <button>Saber Más</button>
+                <button class="sabermas-button">Saber Más</button>
             </div>
             <div class="servicio">
                 <img src="../img/derecho penal.jpg" alt="Derecho Penal">
                 <h3>Derecho Penal</h3>
                 <br>
                 <p>Nos encargamos de casos de delitos graves, asistimos en procedimientos penales y llevamos a cabo recursos y apelaciones penales.</p>
-                <button>Saber Más</button>
+                <button class="sabermas-button">Saber Más</button>
             </div>
             <div class="servicio">
                 <img src="../img/derecho laboral.jpg" alt="Derecho Laboral">
                 <h3>Derecho Laboral</h3>
                 <br>
                 <p>Nuestro equipo de abogados laborales está dedicado a proteger los derechos de los trabajadores y brindar asesoramiento legal en todos los asuntos relacionados con el empleo. </p>
-                <button>Saber Más</button>
+                <button class="sabermas-button">Saber Más</button>
             </div>
             <div class="servicio">
                 <img src="../img/derecho corporativo.jpg" alt="Derecho Corporativo">
                 <h3>Derecho Corporativo</h3>
                 <br>
                 <p>Nuestros abogados de derecho corporativo brindan asesoramiento legal completo a empresas en todas las etapas de su desarrollo. </p>
-                <button>Saber Más</button>
+                <button class="sabermas-button">Saber Más</button>
             </div>
         </section>
         <section class="background-servicio">
