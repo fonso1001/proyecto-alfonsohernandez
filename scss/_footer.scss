@@ -1,0 +1,50 @@
+/* footer */
+#footer{
+    color: white;
+    grid-area: footer;
+    height: 350px;
+    .footer-row{
+        display: grid;
+        grid-template-columns: repeat(4, 425px);
+        grid-template-rows: 350px;
+        justify-content: center;
+        align-content: center;
+        align-items: start;
+        justify-items: center;
+        margin-top: 50px;
+        padding-right: 50px;
+        h3{
+            font-family:"Geologica";
+            color: $secondary-color;
+            font-size: 150%;
+            font-weight: 600;
+        }
+        p{
+            align-self: center;
+        }
+        .contacto-footer {
+            align-items: center;
+            cursor: pointer;
+            .call{
+                padding-bottom: 20px;
+            }
+        }
+        div{
+            .horario-box{
+                display: flex;
+                .horas{
+                    flex-direction: column;
+                    p{
+                        padding-left: 25px;
+                    }
+                }
+            }
+        }
+        .mapa{
+            iframe{
+                width: 400px;
+                height: 250px
+            }
+        }
+    }
+}

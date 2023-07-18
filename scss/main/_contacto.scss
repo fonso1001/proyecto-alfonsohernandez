@@ -1,0 +1,56 @@
+/* MAIN - CONTACTO */
+.titulo-contacto{
+    background-color: $secondary-color;
+    height: 75px;
+    @include font-set (Geologica, 130%, white);
+    @extend .common-flex;
+}
+.fomulario-cta{
+    background-color: rgb(253, 253, 253);
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 125%;
+    display:grid;
+    grid-template-columns: 350px 550px;
+    grid-template-rows: 620px;
+    align-content: center;
+    column-gap: 90px;
+    .formulario{
+        .form{
+            color: $primary-color;
+            font-family:"Geologica";
+            padding-top: 15px;
+            font-weight: 600;
+            input{
+                padding: 8px;
+            }
+            .enviar{
+                padding: 10px;
+                padding-right: 30px;
+                padding-left: 30px;
+                background-color: $secondary-color;
+                border-color: $secondary-color;
+                @include font-set (Geologica, 80%, white);
+                border: none;
+                border-radius: 5px;
+                box-shadow: 0 0 8px rgb(134, 132, 132);
+                cursor: pointer;
+                &:hover{
+                    background-color:  map-get($map: $hover-colors, $key: secondary );
+                    transform: scale(1.1);
+                }
+            }
+        }
+        .cta{
+            h3{
+                font-family:"Geologica";
+                color: $primary-color;
+            }
+            p{
+                font-size: 85%;
+            }
+        }
+    }
+}

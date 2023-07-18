@@ -1,0 +1,302 @@
+/* DESKTOP */
+
+@media (min-width: 972px) and (max-width: 1280px){
+
+    /* HEADER */
+
+    header{
+        grid-area: header;
+    }
+    
+    nav{
+        padding: 0 40px;
+        width: $full-width;
+    }
+    
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbarsecond{
+        height: 110px;
+        width: $full-width;
+        .logo{
+            cursor: pointer;
+        }
+        ul{
+            li{
+                a{
+                    margin-left: 40px;
+                    font-size: 100%;
+                    padding-top: 10px;
+                }
+            }
+        }
+    }
+
+    /* MAIN - INDEX */
+
+    .encabezado {
+        height: 45vh;
+        div{
+            h2{
+                font-size: 200%;
+            }
+            .btn{
+                font-size: 90%;
+            }
+        }
+    }
+    
+    .valores{
+        width: $full-width;
+        height: 250px;
+        .losvalores{
+            display: grid;
+            grid-template-rows: 170px;
+            grid-template-columns: repeat(5, 200px);
+            justify-content: center;
+            align-content: center;
+            justify-items: center;
+            align-items: center;
+            text-align: center;
+            h2{
+                font-size: 200%;
+                font-weight: 600;
+            }
+            p{
+                font-size: 125%;
+            }
+            
+        }
+    }
+
+    #quehacemos{
+        height: 400px;
+        width: $full-width;
+        align-items: center ;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 350px 400px 200px;
+        grid-template-rows: 300px ;
+        align-content: center;
+        column-gap: 50px;
+        .firmando{
+            img{
+                height: 220px;
+            }
+        }
+        .legalia{
+            h2{
+                font-size: 115%
+            }
+            p{
+                font-size: 90%;
+            }
+        }
+        .card {
+            width: 15rem;
+            height: 330px;
+            h5{
+                font-size: 95%;
+            }
+            p{
+                font-size: 90%;
+            }
+        }
+    }
+
+    /* MAIN HISTORIA */
+    #sobrenosotros{
+        height: 420px;
+        display: flex;
+        align-items: center ;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: 220px 380px 220px;
+        grid-template-rows: 350px ;
+        justify-items: center;
+        align-content: center;
+        column-gap: 90px;
+        .img-historia{
+            img{
+                height: 230px;
+            }
+        }
+        .historia-text{
+            padding-bottom: 50px;
+            h1{
+                font-size: 170%;
+            }
+            p{
+                font-size: 70%;
+            }
+        }
+    }
+    
+    /* MAIN - PROFESIONALES */
+    .titulo-profesionales{
+        height: 70px;
+        font-size: 120%;
+    }
+    
+    #profesionales{
+        background-color: white;
+        min-height: 700px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        p{
+            font-size: 130%;
+            font-weight: 800;
+        }
+        h3{
+            font-size: 100%;   
+        }
+        .personas{
+            img{
+                filter: drop-shadow(10px 10px 10px rgb(124, 122, 122));
+                height: 360px;
+                padding-left: 20px;
+            }
+        }
+    }
+    .frase{
+        p{
+            font-size: 130%;
+        }
+    }
+
+    /* MAIN - SERVICIOS */
+.titulo-servicios{
+    height: 75px;
+    font-size: 100%;
+}
+#practicas{
+    height: 1300px;
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    grid-template-rows: repeat(2, 550px);;
+    align-content: center;
+    justify-content: center;
+    column-gap: 50px;
+    row-gap: 50px;
+    .servicio {
+        .sabermas-button{
+            background-color: $secondary-color;
+            border-color: $secondary-color;
+            border-radius: 5px;
+            &:hover{
+                background-color:  #ce8c46;
+                scale: 1.0S;
+            }
+        }
+    }
+}
+
+.background-servicio{
+    height: 50vh;
+    width: $full-width;
+    background-color: aliceblue;
+    background-image: url(../img/background\ inicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    .industrias{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        h3{
+            font-size: 150%;
+            padding-left: 20px;
+        }
+        h4{
+            padding-left: 30px;
+            font-size: 100%;
+        }
+    }
+}
+
+/* MAIN - CONTACTO */
+.titulo-contacto{
+    height: 75px;
+    font-size: 130%;
+}
+.fomulario-cta{
+    font-size: 105%;
+    display:grid;
+    grid-template-columns: 350px 500px;
+    grid-template-rows: 620px;
+    align-content: center;
+    column-gap: 70px;
+    .formulario{
+        .form{
+            padding-top: 15px;
+            font-weight: 600;
+            input{
+                padding: 6px;
+            }
+            .enviar{
+                font-size: 70%;
+            }
+        }
+        .cta{
+            align-self: center;
+            h3{
+                font-family:"Geologica";
+                color: $primary-color;
+            }
+            p{
+                font-size: 85%;
+            }
+        }
+    }
+}
+
+    
+    /* FOOTER */
+    #footer{
+        color: white;
+        grid-area: footer;
+        height: 350px;
+        .footer-row{
+            display: grid;
+            grid-template-columns: repeat(4, 290px);
+            grid-template-rows: 320px;
+            justify-content: center;
+            align-content: center;
+            align-items: start;
+            justify-items: center;
+            margin-top: 50px;
+            padding-right: 50px;
+            h3{
+                font-size: 150%;
+                font-weight: 600;
+            }
+            p{
+                align-self: center;
+                font-size: 80%;
+            }
+            div{
+                .horario-box{
+                    .horas{
+                        p{
+                            padding-left: 20px;
+                        }
+                    }
+                }
+            }
+            .mapa{
+                iframe{
+                    width: 280px;
+                    height: 250px
+                }
+            }
+        }
+    }
+}

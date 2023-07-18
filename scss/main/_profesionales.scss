@@ -1,0 +1,42 @@
+/* MAIN - PROFESIONALES */
+.titulo-profesionales{
+    background-color: $secondary-color;
+    height: 75px;
+    @include font-set (Geologica, 150%, white);
+    @extend .common-flex;
+}
+
+#profesionales{
+    background-color: white;
+    min-height: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    h2{
+        @include font-set (Geologica, 150%, $primary-color);
+        font-weight: 800;
+        padding-top: 20px;
+    }
+    h3{
+        @include font-set (Geologica, 125%, $secondary-color);
+    }
+    .personas{
+        img{
+            filter: drop-shadow(10px 10px 10px rgb(124, 122, 122));
+        }
+    }
+}
+
+.frase {
+    background: radial-gradient(circle, rgba(191,153,111,1) 45%, rgba(228,192,152,1) 87%, rgba(233,211,186,1) 100%);
+    color: white;
+    height: 150px;
+    @extend .common-flex;
+    text-align: center;
+    font-family: "Geologica"; 
+    p{
+        font-size: 160%;
+        color: white;
+    }
+}

@@ -1,0 +1,115 @@
+/* header */
+header{
+    grid-area: header;
+    .navbarone{
+        background-color: gray;
+        color: white;
+        height: 40px;
+        width: $full-width;
+        cursor: pointer;
+        .left{
+            margin-left: 40px;
+        }
+        .right{
+            div{
+                div{
+                    margin-left: 40px;
+                }
+            }
+        }
+    }
+    
+}
+
+nav{
+    padding: 0 50px;
+    width: $full-width;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email,
+.call{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    span{
+        margin-left: 5px;
+    }
+    &:hover{
+        color: black;
+    }
+}
+
+.navbarsecond{
+    background-color: $primary-color;
+    height: 110px;
+    width: $full-width;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    .logo{
+        cursor: pointer;
+    }
+    .menu-toggle {
+        display: none;
+    }
+    .menu-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+        span{
+            display: none;
+            background-color: white;
+            height: 3px;
+            width: $full-width;
+            transition: all 0.3s ease-in-out;
+        }
+        
+    }
+    ul{
+        li{
+            list-style: none;
+            &:hover{
+                transform: scale(1.1);
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                font-weight: 700;
+                cursor: pointer;
+                margin-left: 60px;
+                font-size: 120%;
+                font-family:"Geologica";
+                padding-top: 5px;
+                &:hover{
+                    color: $secondary-color;
+                }
+            }
+            .active{
+                color: $secondary-color;
+            }
+        }
+    }
+    
+}
+
+
+.menu-toggle:checked + .menu-btn span:nth-child(1) {
+    transform: rotate(45deg) translate(4px, 5px);
+}
+
+.menu-toggle:checked + .menu-btn span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle:checked + .menu-btn span:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -5px);
+}

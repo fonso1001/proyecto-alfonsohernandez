@@ -1,0 +1,78 @@
+/* MAIN - HISTORIA */
+#sobrenosotros{
+    background-color: white;
+    height: 500px;
+    font-family:"Geologica";
+    @extend .common-flex;
+    display: grid;
+    grid-template-columns: 250px 600px 250px;
+    grid-template-rows: 350px ;
+    justify-items: center;
+    align-content: center;
+    column-gap: 140px;
+    .img-historia{
+        img{
+            height: 300px;
+            transform: rotateY(40deg);
+        }
+    }
+    .historia-text{
+        padding-bottom: 50px;
+        h1{
+            font-size: 300%;
+        }
+        p{
+            font-size: 108%;
+        }
+    }
+}
+
+#filosofia{
+    height: 500px;
+    background: radial-gradient(circle, rgba(191,153,111,1) 45%, rgba(228,192,152,1) 87%, rgba(233,211,186,1) 100%);
+    color: white;
+    font-family:"Geologica";
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "mision vision valores";
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: 400px 400px 200px;
+    column-gap: 60px;
+    row-gap: 50px;
+    .filosofia-titulo{
+        grid-area: titulo;
+        justify-self: center;
+        padding-bottom: 30px;
+        font-size: 150%;
+        text-decoration-line: underline;
+    }
+    .mision{
+        grid-area: mision;
+        h3{
+            font-size: 200%;
+        }
+        p{
+            font-size: 110%;
+        }
+    }
+    .vision{
+        grid-area: vision;
+        h3{
+            font-size: 200%;
+        }
+        p{
+            font-size: 110%;
+        }
+    }
+    .valores2{
+        grid-area: valores;
+        h3{
+            font-size: 200%;
+        }
+        p{
+            font-size: 110%;
+        }
+    }
+}

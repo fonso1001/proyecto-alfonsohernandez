@@ -1,0 +1,89 @@
+/* MAIN - INDEX */
+.encabezado {
+    @include ejes ($full-width, 50vh);
+    background-color: aliceblue;
+    background-image: url(../img/background\ inicio\ 2\ \(2\).webp);
+    @include background (no-repeat, cover, center, fixed);
+    color: white;
+    font-family:"Geologica";
+    @extend .common-flex;
+    flex-direction: column;
+    div{
+        h1{
+            font-size: 300%;
+        }
+        .btn{
+            margin-top: 50px;
+            padding: 15px 30px 15px;
+            font-size: 110%;
+            background-color:#212d4bbe;
+            color: white;
+            border-color: $primary-color;
+            &:hover{
+                background-color: map-get($map: $hover-colors, $key:primary);
+            }
+        }
+    }
+}
+
+.valores{
+    background-color: #ffffff;
+    @include ejes ($full-width,250px);
+    font-family:"Geologica";
+    color: $secondary-color;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    .losvalores{
+        display: grid;
+        grid-template-rows: 170px;
+        grid-template-columns: repeat(5, 300px);
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        h2{
+            font-size: 300%;
+            font-weight: 700;
+        }
+        p{
+            font-size: 150%;
+        }
+    }
+    
+}
+
+#quehacemos{
+    background-color: #e0dfde;
+    font-family:"Geologica";
+    @include ejes ($full-width, 450px);
+    @extend .common-flex;
+    display: grid;
+    grid-template-columns: 500px 550px 250px;
+    grid-template-rows: 350px ;
+    align-content: center;
+    column-gap: 100px;
+    .firmando{
+        img{
+            height: 325px;
+        }
+    }
+    .legalia{
+        p{
+            font-size: 110%;
+        }
+    }
+    .card{
+        background-color: rgb(241, 207, 155);
+        width: 18rem;
+        .btn {
+            background-color:#212d4bbe;
+            color: white;
+            border-color: $primary-color;
+            &:hover{
+                background-color: map-get($map: $hover-colors, $key: primary );
+            }
+        }
+    }
+}

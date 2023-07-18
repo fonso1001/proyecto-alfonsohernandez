@@ -1,0 +1,71 @@
+/* MAIN - SERVICIOS */
+.titulo-servicios{
+    background-color: $secondary-color;
+    height: 75px;
+    @include font-set (Geologica, 115%, white);
+    @extend .common-flex;
+}
+#practicas{
+    height: 800px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    grid-template-rows: 550px;
+    align-content: center;
+    justify-content: center;
+    column-gap: 50px;
+    .servicio {
+        @include ejes (350px, 275px);
+        background-color: white;
+        padding: 10px;
+        margin: 20px 40px 20px 40px;
+        padding-bottom: 500px;
+        img{
+            height: 225px;
+            filter: drop-shadow(10px 10px 10px rgb(124, 122, 122));
+        }
+        h3{
+            @include font-set (Geologica, 150%, $primary-color);
+            padding-top: 25px;
+        }
+        p{
+            font-size: 115%;
+        }
+        .sabermas-button{
+            padding: 10px;
+            padding-right: 15px;
+            background-color: $secondary-color;
+            color: white;
+            margin-top: 15px;
+            font-family:"Geologica";
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 8px rgb(134, 132, 132);
+            cursor: pointer;
+            &:hover{
+                background-color: map-get($map: $hover-colors, $key: secondary );
+                transform: scale(1.1)
+            }
+        }
+    }
+}
+
+.background-servicio{
+    @include ejes ($full-width, 55vh);
+    background-color: aliceblue;
+    background-image: url(../img/background\ inicio.jpg);
+    @include background (no-repeat, cover, center, fixed);
+    .industrias{
+        background: linear-gradient(180deg, rgba(236,221,202,1) 31%, rgba(241,234,226,1) 62%, rgba(242,241,239,1) 100%);
+        @extend .common-flex;
+        height: 150px;
+        h3{
+            @include font-set (Geologica, 200%, $secondary-color);
+            text-decoration: overline;
+        }
+        h4{
+            @include font-set (Geologica, 120%, $primary-color);
+            padding-left: 80px;
+        }
+    }
+}

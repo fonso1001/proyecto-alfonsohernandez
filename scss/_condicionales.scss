@@ -1,0 +1,19 @@
+$background: primary;
+
+@if $background == primary{
+    body{
+        background-color: $primary-color;
+    }
+}
+
+@else if $background == secondary{
+    body{
+        background-color: $secondary-color;
+    }
+}
+
+@else{
+    body{
+        background-color: black;
+    }
+}
