@@ -865,10 +865,10 @@ nav {
   .fomulario-cta .formulario .form .enviar:hover {
     background-color: #ce8c46;
   }
-  .fomulario-cta .formulario .cta p {
+  .fomulario-cta .cta p {
     font-size: 75%;
   }
-  .fomulario-cta .formulario .cta img {
+  .fomulario-cta .cta img {
     width: 100%;
   }
   /* Footer */
@@ -1128,14 +1128,14 @@ nav {
   .fomulario-cta .formulario .form .enviar {
     font-size: 70%;
   }
-  .fomulario-cta .formulario .cta {
+  .fomulario-cta .cta {
     align-self: center;
   }
-  .fomulario-cta .formulario .cta h3 {
+  .fomulario-cta .cta h3 {
     font-family: "Geologica";
     color: #212D4B;
   }
-  .fomulario-cta .formulario .cta p {
+  .fomulario-cta .cta p {
     font-size: 85%;
   }
   /* FOOTER */
