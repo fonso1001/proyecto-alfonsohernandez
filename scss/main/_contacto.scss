@@ -43,14 +43,17 @@
                 }
             }
         }
-        .cta{
-            h3{
-                font-family:"Geologica";
-                color: $primary-color;
-            }
-            p{
-                font-size: 85%;
-            }
+    }
+    .cta{
+        h3{
+            font-family:"Geologica";
+            color: $primary-color;
+        }
+        p{
+            font-size: 85%;
+        }
+        img{
+            width: 100%;
         }
     }
 }

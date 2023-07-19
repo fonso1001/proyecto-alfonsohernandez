@@ -480,12 +480,15 @@ nav {
   background-color: #ce8c46;
   transform: scale(1.1);
 }
-.fomulario-cta .formulario .cta h3 {
+.fomulario-cta .cta h3 {
   font-family: "Geologica";
   color: #212D4B;
 }
-.fomulario-cta .formulario .cta p {
+.fomulario-cta .cta p {
   font-size: 85%;
+}
+.fomulario-cta .cta img {
+  width: 100%;
 }
 
 /* footer */
@@ -542,17 +545,17 @@ nav {
     grid-template-areas: "header" "main" "footer";
   }
   /* HEADER */
-  nav {
+  header nav {
     padding: 0 25px;
   }
-  .navbarone {
+  header .navbarone {
     width: 100%;
-    height: 100px;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .navbarone .right {
+  header .navbarone .right {
     flex-direction: column;
   }
   .navbarsecond {
@@ -688,7 +691,7 @@ nav {
     font-size: 100%;
   }
   #filosofia {
-    height: 800px;
+    height: 950px;
     background-color: #BF996F;
     color: white;
     font-family: "Geologica";
@@ -866,8 +869,7 @@ nav {
     font-size: 75%;
   }
   .fomulario-cta .formulario .cta img {
-    height: 150px;
-    width: 100px;
+    width: 100%;
   }
   /* Footer */
   #footer {
@@ -1152,6 +1154,7 @@ nav {
     justify-items: center;
     margin-top: 50px;
     padding-right: 50px;
+    width: 100%;
   }
   #footer .footer-row h3 {
     font-size: 150%;

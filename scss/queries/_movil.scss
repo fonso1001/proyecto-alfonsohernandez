@@ -9,20 +9,21 @@
     }
 
     /* HEADER */
-    nav{
-        padding: 0 25px;
-    }
-    .navbarone{
-        width: $full-width;
-        height: 100px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .right{
+    header{
+        nav{
+            padding: 0 25px;
+        }
+        .navbarone{
+            width: $full-width;
+            height: 100%;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .right{
+                flex-direction: column;
+            }
         }
     }
-
     .navbarsecond{
         position: sticky;
         top: 0px;
@@ -55,10 +56,10 @@
             }
         }
     }
-
     .menu-toggle:checked ~ .menu {
         display: block;
     }
+
 
     /* MAIN - INDEX */
     .encabezado{
@@ -170,7 +171,7 @@
     }
     
     #filosofia{
-        height: 800px;
+        height: 950px;
         background-color: $secondary-color;
         color: white;
         font-family:"Geologica";
@@ -366,8 +367,7 @@
                     font-size: 75%;
                 }
                 img {
-                    height: 150px;
-                    width: 100px;
+                    width: $full-width;
                 }
             }
         }
