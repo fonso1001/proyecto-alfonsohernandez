@@ -1,3 +1,4 @@
+/* GENERALES Y OTROS*/
 /*VARIBALES*/
 * {
   padding: 0;
@@ -26,14 +27,18 @@ body {
   background-color: #212D4B;
 }
 
-/* MAPAS */ /* EXTENDS */
+/* MAPAS */
+/*EXTEND y MIXIN*/
+/* EXTENDS */
 .common-flex, .titulo-contacto, .background-servicio .industrias, .titulo-servicios, .frase, .titulo-profesionales, #sobrenosotros, #quehacemos, .encabezado {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* MIXINS */ /* header */
+/* MIXINS */
+/* HEADER */
+/* header */
 header {
   grid-area: header;
 }
@@ -141,6 +146,7 @@ nav {
   transform: rotate(-45deg) translate(4px, -5px);
 }
 
+/* MAIN */
 /* MAIN - INDEX */
 .encabezado {
   width: 100%;
@@ -491,6 +497,7 @@ nav {
   width: 100%;
 }
 
+/*FOOTER*/
 /* footer */
 #footer {
   color: white;
@@ -538,6 +545,7 @@ nav {
   height: 250px;
 }
 
+/* MEDIA QUERIES */
 /* MOVIL */
 @media (max-width: 576px) {
   body {
@@ -560,7 +568,11 @@ nav {
   }
   .navbarsecond {
     position: sticky;
-    top: 0px;
+    top: 0;
+    padding-left: 0;
+  }
+  .navbarsecond .logo img {
+    height: 120px;
   }
   .navbarsecond .menu-btn span {
     display: block;
@@ -603,6 +615,7 @@ nav {
   }
   .encabezado div h1 {
     font-size: 140%;
+    text-align: center;
   }
   .encabezado div .btn {
     font-size: 90%;
@@ -662,7 +675,7 @@ nav {
     font-size: 100%;
   }
   /* MAIN - HISTORIA */
-  #sobrenosotros {
+  main #sobrenosotros {
     background-color: white;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -678,19 +691,19 @@ nav {
     align-content: center;
     row-gap: 170px;
   }
-  #sobrenosotros .img-historia img {
+  main #sobrenosotros .img-historia img {
     height: 200px;
   }
-  #sobrenosotros .historia-text {
+  main #sobrenosotros .historia-text {
     padding-bottom: 50px;
   }
-  #sobrenosotros .historia-text h1 {
+  main #sobrenosotros .historia-text h1 {
     font-size: 150%;
   }
-  #sobrenosotros .historia-text p {
+  main #sobrenosotros .historia-text p {
     font-size: 100%;
   }
-  #filosofia {
+  main #filosofia {
     height: 950px;
     background-color: #BF996F;
     color: white;
@@ -704,42 +717,42 @@ nav {
     row-gap: 50px;
     text-align: center;
   }
-  #filosofia .filosofia-titulo {
+  main #filosofia .filosofia-titulo {
     grid-area: titulo;
     justify-self: center;
     padding-bottom: 30px;
     font-size: 100%;
     text-decoration-line: underline;
   }
-  #filosofia .mision {
+  main #filosofia .mision {
     grid-area: mision;
   }
-  #filosofia .mision h2 {
+  main #filosofia .mision h2 {
     font-size: 100%;
   }
-  #filosofia .mision p {
+  main #filosofia .mision p {
     font-size: 90%;
   }
-  #filosofia .vision {
+  main #filosofia .vision {
     grid-area: vision;
   }
-  #filosofia .vision h2 {
+  main #filosofia .vision h2 {
     font-size: 100%;
   }
-  #filosofia .vision p {
+  main #filosofia .vision p {
     font-size: 90%;
   }
-  #filosofia .valores2 {
+  main #filosofia .valores2 {
     grid-area: valores;
   }
-  #filosofia .valores2 h2 {
+  main #filosofia .valores2 h2 {
     font-size: 90%;
   }
-  #filosofia .valores2 p {
+  main #filosofia .valores2 p {
     font-size: 90%;
   }
   /* MAIN - PROFESIONALES */
-  .titulo-profesionales {
+  main .titulo-profesionales {
     height: 75px;
     font-size: 100%;
     display: flex;
@@ -747,31 +760,31 @@ nav {
     justify-content: center;
     align-items: center;
   }
-  #profesionales {
+  main #profesionales {
     min-height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  #profesionales p {
+  main #profesionales p {
     color: #212D4B;
     font-size: 120%;
     font-weight: 600;
     padding-top: 20px;
   }
-  #profesionales h3 {
+  main #profesionales h3 {
     font-size: 110%;
   }
-  #profesionales .personas:nth-child(4) {
+  main #profesionales .personas:nth-child(4) {
     padding-bottom: 35px;
   }
-  #profesionales .personas img {
+  main #profesionales .personas img {
     filter: drop-shadow(10px 10px 10px rgb(124, 122, 122));
     height: 325px;
     padding-top: 35px;
   }
-  .frase {
+  main .frase {
     height: 250px;
     display: flex;
     justify-content: center;
@@ -779,7 +792,7 @@ nav {
     text-align: center;
     flex-direction: column;
   }
-  .frase p {
+  main .frase p {
     font-size: 120%;
     color: white;
   }
@@ -789,11 +802,21 @@ nav {
     font-size: 70%;
   }
   #practicas {
-    height: 2200px;
-    display: flex;
-    flex-direction: column;
+    height: 2300px;
+    background-color: none;
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: repeat(4, 550px);
+    align-content: center;
     justify-content: center;
-    align-items: center;
+    row-gap: 25px;
+  }
+  #practicas .servicio {
+    width: 300px;
+    height: 150px;
+    background-color: none;
+    padding: 0;
+    margin: 0;
   }
   #practicas .servicio img {
     width: 300px;

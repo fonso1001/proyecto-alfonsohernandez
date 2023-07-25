@@ -26,7 +26,13 @@
     }
     .navbarsecond{
         position: sticky;
-        top: 0px;
+        top: 0;
+        padding-left: 0;
+        .logo{
+            img{
+                height: 120px;
+            }
+        }
         .menu-btn{
             span {
                 display: block;
@@ -73,6 +79,7 @@
         div{
             h1{
                 font-size: 140%;
+                text-align: center;
             }
             .btn{
                 font-size: 90%;
@@ -139,138 +146,139 @@
     }
 
     /* MAIN - HISTORIA */
-    #sobrenosotros{
-        background-color: white;
-        padding-top: 100px;
-        padding-bottom: 100px;
-        height: 1300px;
-        font-family:"Geologica";
-        display: flex;
-        align-items: center ;
-        justify-content: center;
-        display: grid;
-        grid-template-columns: 250px;
-        grid-template-rows: 300px 350px 300px;
-        justify-items: center;
-        align-content: center;
-        row-gap: 170px;
-        .img-historia{
-            img{
-                height: 200px;
+    main{
+        #sobrenosotros{
+            background-color: white;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            height: 1300px;
+            font-family:"Geologica";
+            display: flex;
+            align-items: center ;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: 250px;
+            grid-template-rows: 300px 350px 300px;
+            justify-items: center;
+            align-content: center;
+            row-gap: 170px;
+            .img-historia{
+                img{
+                    height: 200px;
+                }
+            }
+            .historia-text{
+                padding-bottom: 50px;
+                h1{
+                    font-size: 150%;
+                }
+                p{
+                    font-size: 100%;
+                }
             }
         }
-        .historia-text{
-            padding-bottom: 50px;
-            h1{
-                font-size: 150%;
-            }
-            p{
+        #filosofia{
+            height: 950px;
+            background-color: $secondary-color;
+            color: white;
+            font-family:"Geologica";
+            /* display: flex; */
+            display: grid;
+            grid-template-areas: 
+            "titulo"
+            "mision" 
+            "vision" 
+            "valores";
+            justify-content: center;
+            align-content: center;
+            grid-template-columns: 300px;
+            row-gap: 50px;
+            text-align: center;
+            .filosofia-titulo{
+                grid-area: titulo;
+                justify-self: center;
+                padding-bottom: 30px;
                 font-size: 100%;
+                text-decoration-line: underline;
             }
+            .mision{
+                grid-area: mision;
+                h2{
+                    font-size: 100%;
+                }
+                p{
+                    font-size: 90%;
+                }
+            }
+            .vision{
+                grid-area: vision;
+                h2{
+                    font-size: 100%;
+                }
+                p{
+                    font-size: 90%;
+                }
+            }
+            .valores2{
+                grid-area: valores;
+                h2{
+                    font-size: 90%;
+                }
+                p{
+                    font-size: 90%;
+                }
+            }
+            
         }
-    }
-    
-    #filosofia{
-        height: 950px;
-        background-color: $secondary-color;
-        color: white;
-        font-family:"Geologica";
-        /* display: flex; */
-        display: grid;
-        grid-template-areas: 
-        "titulo"
-        "mision" 
-        "vision" 
-        "valores";
-        justify-content: center;
-        align-content: center;
-        grid-template-columns: 300px;
-        row-gap: 50px;
-        text-align: center;
-        .filosofia-titulo{
-            grid-area: titulo;
-            justify-self: center;
-            padding-bottom: 30px;
-            font-size: 100%;
-            text-decoration-line: underline;
-        }
-        .mision{
-            grid-area: mision;
-            h2{
-                font-size: 100%;
-            }
-            p{
-                font-size: 90%;
-            }
-        }
-        .vision{
-            grid-area: vision;
-            h2{
-                font-size: 100%;
-            }
-            p{
-                font-size: 90%;
-            }
-        }
-        .valores2{
-            grid-area: valores;
-            h2{
-                font-size: 90%;
-            }
-            p{
-                font-size: 90%;
-            }
-        }
-        
     }
 
     /* MAIN - PROFESIONALES */
-    .titulo-profesionales{
-        height: 75px;
-        font-size: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #profesionales{
-        min-height: 600px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        p{
-            color: $primary-color;
-            font-size: 120%;
-            font-weight: 600;
-            padding-top: 20px;
+    main{
+        .titulo-profesionales{
+            height: 75px;
+            font-size: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
-        h3{
-            font-size: 110%;   
-        }
-        .personas{
-            &:nth-child(4){
-                padding-bottom: 35px;
+        #profesionales{
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            p{
+                color: $primary-color;
+                font-size: 120%;
+                font-weight: 600;
+                padding-top: 20px;
             }
-            img{
-                filter: drop-shadow(10px 10px 10px rgb(124, 122, 122));
-                height: 325px;
-                padding-top: 35px;
+            h3{
+                font-size: 110%;   
+            }
+            .personas{
+                &:nth-child(4){
+                    padding-bottom: 35px;
+                }
+                img{
+                    filter: drop-shadow(10px 10px 10px rgb(124, 122, 122));
+                    height: 325px;
+                    padding-top: 35px;
+                }
             }
         }
-    }
-
-    .frase {
-        height: 250px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
-        p{
-            font-size: 120%;
-            color: white;
+        .frase {
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            p{
+                font-size: 120%;
+                color: white;
+            }
         }
     }
 
@@ -280,12 +288,19 @@
         font-size: 70%;
     }
     #practicas{
-        height: 2200px;
-        display: flex;
-        flex-direction: column;
+        height: 2300px;
+        background-color: none;
+        display: grid;
+        grid-template-columns: 320px;
+        grid-template-rows: repeat(4, 550px);
+        align-content: center;
         justify-content: center;
-        align-items: center;
+        row-gap: 25px;
         .servicio {
+            @include ejes (300px, 150px);
+            background-color: none;
+            padding: 0;
+            margin: 0;
             img{
                 width: 300px;
             }

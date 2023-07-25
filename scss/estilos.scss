@@ -1,16 +1,28 @@
+
+/* GENERALES Y OTROS*/
 @import 'variables';
 @import 'generales';
 @import 'condicionales';
 @import 'maps';
+
+/*EXTEND y MIXIN*/
 @import 'extend-mixin/extend';
 @import 'extend-mixin/mixin';
+
+/* HEADER */
 @import 'header';
+
+/* MAIN */
 @import 'main/index';
 @import 'main/historia';
 @import 'main/profesionales';
 @import 'main/servicios';
 @import 'main/contacto';
+
+/*FOOTER*/
 @import 'footer';
+
+/* MEDIA QUERIES */
 @import 'queries/movil';
 @import 'queries/desktop';
 
