@@ -16,7 +16,7 @@
     grid-template-columns: 350px 550px;
     grid-template-rows: 620px;
     align-content: center;
-    column-gap: 90px;
+    column-gap: 60px;
     .formulario{
         .form{
             color: $primary-color;
@@ -31,7 +31,6 @@
                 padding-right: 30px;
                 padding-left: 30px;
                 background-color: $secondary-color;
-                border-color: $secondary-color;
                 @include font-set (Geologica, 80%, white);
                 border: none;
                 border-radius: 5px;

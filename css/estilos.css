@@ -457,7 +457,7 @@ nav {
   grid-template-columns: 350px 550px;
   grid-template-rows: 620px;
   align-content: center;
-  column-gap: 90px;
+  column-gap: 60px;
 }
 .fomulario-cta .formulario .form {
   color: #212D4B;
@@ -473,7 +473,6 @@ nav {
   padding-right: 30px;
   padding-left: 30px;
   background-color: #BF996F;
-  border-color: #BF996F;
   font-family: Geologica;
   font-size: 80%;
   color: white;
@@ -515,21 +514,27 @@ nav {
   margin-top: 50px;
   padding-right: 50px;
 }
-#footer .footer-row h3 {
+#footer .footer-row .contacto-footer {
+  align-items: center;
+  cursor: pointer;
+}
+#footer .footer-row .contacto-footer h3 {
   font-family: "Geologica";
   color: #BF996F;
   font-size: 150%;
   font-weight: 600;
 }
-#footer .footer-row p {
-  align-self: center;
-}
-#footer .footer-row .contacto-footer {
-  align-items: center;
-  cursor: pointer;
-}
 #footer .footer-row .contacto-footer .call {
   padding-bottom: 20px;
+}
+#footer .footer-row div h3 {
+  font-family: "Geologica";
+  color: #BF996F;
+  font-size: 150%;
+  font-weight: 600;
+}
+#footer .footer-row div p {
+  align-self: center;
 }
 #footer .footer-row div .horario-box {
   display: flex;
@@ -653,7 +658,7 @@ nav {
   #quehacemos {
     background-color: #e0dfde;
     font-family: "Geologica";
-    height: 1150px;
+    height: 1250px;
     width: 100%;
     display: grid;
     grid-template-columns: 400px;
@@ -662,7 +667,7 @@ nav {
     justify-content: center;
     justify-items: center;
     text-align: center;
-    row-gap: 95px;
+    row-gap: 125px;
   }
   #quehacemos .firmando img {
     height: 250px;
@@ -708,7 +713,6 @@ nav {
     background-color: #BF996F;
     color: white;
     font-family: "Geologica";
-    /* display: flex; */
     display: grid;
     grid-template-areas: "titulo" "mision" "vision" "valores";
     justify-content: center;
@@ -802,14 +806,15 @@ nav {
     font-size: 70%;
   }
   #practicas {
-    height: 2300px;
+    height: 2400px;
     background-color: none;
     display: grid;
     grid-template-columns: 320px;
     grid-template-rows: repeat(4, 550px);
     align-content: center;
-    justify-content: center;
-    row-gap: 25px;
+    justify-items: center;
+    align-items: start;
+    padding-top: 65px;
   }
   #practicas .servicio {
     width: 300px;
@@ -855,15 +860,14 @@ nav {
     font-size: 100%;
   }
   .fomulario-cta {
-    height: 1200px;
+    height: 1100px;
     font-size: 90%;
     display: grid;
-    grid-template-columns: 360px;
-    grid-template-rows: 620px 620px;
-    align-content: center;
-    justify-content: center;
+    grid-template-columns: 350px;
+    grid-template-rows: 620px 450px;
+    justify-items: center;
     align-items: center;
-    row-gap: 0px;
+    row-gap: 15px;
   }
   .fomulario-cta .formulario .form {
     color: #212D4B;
@@ -872,6 +876,7 @@ nav {
   }
   .fomulario-cta .formulario .form input {
     padding: 8px;
+    size: 30px;
   }
   .fomulario-cta .formulario .form .enviar {
     padding: 8px;
@@ -888,8 +893,17 @@ nav {
   .fomulario-cta .formulario .form .enviar:hover {
     background-color: #ce8c46;
   }
+  .fomulario-cta .cta {
+    align-self: flex-start;
+  }
+  .fomulario-cta .cta h3 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   .fomulario-cta .cta p {
-    font-size: 75%;
+    font-size: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .fomulario-cta .cta img {
     width: 100%;
@@ -910,19 +924,23 @@ nav {
     margin-top: 50px;
     row-gap: 30px;
   }
-  #footer .footer-row h3 {
-    font-size: 100%;
-    font-weight: 500;
-  }
-  #footer .footer-row p {
-    align-self: center;
-  }
   #footer .footer-row .contacto-footer {
     align-items: center;
     cursor: pointer;
   }
+  #footer .footer-row .contacto-footer h3 {
+    font-size: 100%;
+    font-weight: 500;
+  }
   #footer .footer-row .contacto-footer .call {
     padding-bottom: 20px;
+  }
+  #footer .footer-row div h3 {
+    font-size: 100%;
+    font-weight: 500;
+  }
+  #footer .footer-row div p {
+    align-self: center;
   }
   #footer .footer-row div .horario-box {
     display: flex;
@@ -1052,6 +1070,27 @@ nav {
   #sobrenosotros .historia-text p {
     font-size: 70%;
   }
+  #filosofia h2 {
+    font-size: 120%;
+  }
+  #filosofia .mision h3 {
+    font-size: 120%;
+  }
+  #filosofia .mision p {
+    font-size: 100%;
+  }
+  #filosofia .vision h3 {
+    font-size: 120%;
+  }
+  #filosofia .vision p {
+    font-size: 100%;
+  }
+  #filosofia .valores h3 {
+    font-size: 120%;
+  }
+  #filosofia .valores p {
+    font-size: 100%;
+  }
   /* MAIN - PROFESIONALES */
   .titulo-profesionales {
     height: 70px;
@@ -1179,20 +1218,36 @@ nav {
     padding-right: 50px;
     width: 100%;
   }
-  #footer .footer-row h3 {
+  #footer .footer-row .logo-footer {
+    justify-self: end;
+  }
+  #footer .footer-row .logo-footer img {
+    width: 250px;
+  }
+  #footer .footer-row .contacto-footer h3 {
     font-size: 150%;
     font-weight: 600;
   }
-  #footer .footer-row p {
+  #footer .footer-row div h3 {
+    font-size: 150%;
+    font-weight: 600;
+  }
+  #footer .footer-row div p {
     align-self: center;
     font-size: 80%;
   }
   #footer .footer-row div .horario-box .horas p {
     padding-left: 20px;
   }
+  #footer .footer-row .mapa {
+    justify-self: start;
+  }
   #footer .footer-row .mapa iframe {
-    width: 280px;
+    width: 250px;
     height: 250px;
+  }
+  #footer .footer-row .mapa img {
+    width: 200px;
   }
 }
 

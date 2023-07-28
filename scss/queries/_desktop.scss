@@ -135,6 +135,35 @@
             }
         }
     }
+    #filosofia{
+        h2{
+            font-size: 120%;
+        }
+        .mision{
+            h3{
+                font-size: 120%;
+            }
+            p{
+                font-size: 100%;
+            }
+        }
+        .vision{
+            h3{
+                font-size: 120%;
+            }
+            p{
+                font-size: 100%;
+            }
+        }
+        .valores{
+            h3{
+                font-size: 120%;
+            }
+            p{
+                font-size: 100%;
+            }
+        }
+    }
     
     /* MAIN - PROFESIONALES */
     .titulo-profesionales{
@@ -275,15 +304,27 @@
             margin-top: 50px;
             padding-right: 50px;
             width: $full-width;
-            h3{
-                font-size: 150%;
-                font-weight: 600;
+            .logo-footer{
+                justify-self: end;
+                img{
+                    width: 250px;
+                }
             }
-            p{
-                align-self: center;
-                font-size: 80%;
+            .contacto-footer{
+                h3{
+                    font-size: 150%;
+                    font-weight: 600;
+                }
             }
             div{
+                h3{
+                    font-size: 150%;
+                    font-weight: 600;
+                }
+                p{
+                    align-self: center;
+                    font-size: 80%;
+                }
                 .horario-box{
                     .horas{
                         p{
@@ -293,9 +334,13 @@
                 }
             }
             .mapa{
+                justify-self: start;
                 iframe{
-                    width: 280px;
-                    height: 250px
+                    width: 250px;
+                    height: 250px;
+                }
+                img{
+                    width: 200px;
                 }
             }
         }

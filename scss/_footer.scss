@@ -13,23 +13,29 @@
         justify-items: center;
         margin-top: 50px;
         padding-right: 50px;
-        h3{
-            font-family:"Geologica";
-            color: $secondary-color;
-            font-size: 150%;
-            font-weight: 600;
-        }
-        p{
-            align-self: center;
-        }
         .contacto-footer {
             align-items: center;
             cursor: pointer;
+            h3{
+                font-family:"Geologica";
+                color: $secondary-color;
+                font-size: 150%;
+                font-weight: 600;
+            }
             .call{
                 padding-bottom: 20px;
             }
         }
         div{
+            h3{
+                font-family:"Geologica";
+                color: $secondary-color;
+                font-size: 150%;
+                font-weight: 600;
+            }
+            p{
+                align-self: center;
+            }
             .horario-box{
                 display: flex;
                 .horas{
